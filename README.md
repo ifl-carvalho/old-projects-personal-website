@@ -1,5 +1,4 @@
-Projeto de site pessoal simples.
-
+Projeto de site pessoal.
 <br>
 
 ## 💻 Tecnologias
