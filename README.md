@@ -3,7 +3,7 @@ Projeto de site pessoal.
 
 ## 💻 Tecnologias
 
-Esse projeto foi feito com React.Js , Redux, Hooks, Custom Hooks e Amazon AWS
+Esse projeto foi feito com React.Js , Redux, Hooks, Custom Hooks e Firebase Hosting
 
 ## 👤 Autor
 
