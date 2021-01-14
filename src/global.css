@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, #root, .App {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+*
+{
+  margin:0px;
+  padding:0px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255, 255) rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+  transition: background 0.2s ease-in;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 5px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: hsla(0, 0%, 0%, 0.80); 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus
+{
+  border: none;
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0 0 0px 1000px #000 inset;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

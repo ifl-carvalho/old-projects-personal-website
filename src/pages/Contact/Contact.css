@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+.contacts {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100% ;
+  
+  background-image: radial-gradient(#FFF 7%, transparent 7%), radial-gradient(#FFF 7%, transparent 7%);
+  background-color: #000;
+  background-position: 0 0, 85px -90px;
+  background-size: 180px 180px;
+  animation-name: backgroundmovement;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.26,.2,.79,.87);
+  
+  overflow: hidden;
+}
+
+@keyframes backgroundmovement {
+  0% {
+background-position: 0px -0px, 85px -90px;
+     }
+ 100% {
+background-position: 900px -900px, 985px -990px;
+  }
+}
+
+.contactsWrapper {
+  width: 100%; height: 100%;
+}
+
+.contactsContainer {
+  width: 100%; height: 100%;
+  background: #fff;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.contactsIntro {
+  width: 60%; height: 50%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsText {
+  width: 650px;
+  margin-top: 50px;
+  margin-left: 110px;
+  font-size: 4.6vh;
+  font-weight: 400;
+}
+
+.contactsDragButton {
+  margin-top: 55px;
+  margin-left: 2%;
+  width: 400px;
+  text-decoration: none;
+  font-size: 4.3vh;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+  border: none;
+  outline: none;
+}
+
+.contactDragButtonArrowLeft {
+  margin-left: 2%;
+  margin-right: 2%;
+  
+  font-size: 5vh;
+  font-weight: bold;
+  display: inline-block;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.contactForms {
+  position: absolute;
+  left: 50%; top: 10%;
+  width: 40%; height:60%;
+}
+
+.contactsToHomeButton {
+  position: absolute;
+  top: 0; right: 0;
+  height: auto; width: auto;
+  margin-right: 1%;
+  text-decoration: none;
+  color: #000;
+  font-size: 5.8vh;
+  font-weight: 600;
+
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1366px)  {
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactsIntro {
+    height: 50%; width: 100%;
+  }
+
+  .contactsText {
+    width: 70%; height: 100%;
+    margin: auto;
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .contactsDragButton {
+    text-align: left;
+    float: left;
+    width: auto;
+    margin: 3%;
+  }
+
+  .contactsToHomeButton {
+    position: absolute;
+    top: 0; right: 0;
+    height: auto; width: auto;
+    margin: 0 1%;
+    font-size: 4vh;
+  }
+  
+  .contactForms {
+    position: relative;
+    top: 0; left: 0;
+    width: 80%;
+    height: 50%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1366px) {
+  .contactsText {
+    font-size: 3vw;
+  }
+
+  .contactsDragButton {
+    font-size: 3vw;
+  }
+}
+
+
+@media (orientation: landscape) and (max-width: 830px) and (min-width: 800px) {
+  .contactsText {
+    margin: 0;
+    width: 100%;
+    font-size: 2.5vw;
+  }
+  .contactsDragButton {
+    float: left;
+    width: 23%;
+    font-size: 2.5vw;
+    
+    z-index: 1000;
+  }
+  .contactDragButtonArrowLeft {
+    margin: 0;
+    font-size: 3vw;
+  }
+
+  .contactsToHomeButton {
+    font-size: 3vw;
+  }
+}

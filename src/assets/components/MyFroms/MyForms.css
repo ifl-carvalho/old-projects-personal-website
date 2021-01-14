@@ -1,0 +1,147 @@
+.forms {
+    width: 100%; height: 100%; 
+}
+
+.formsInputEmail {
+    padding-left: 60px;
+    margin-top: 120px;
+    width: calc(100% - 60px); height: 60px; 
+    max-width: calc(100% - 60px);
+
+    background: #000; color: #fff;
+    border: none; 
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+.formsInputText {
+    padding: 30px;
+    margin-top: 15px;
+    width: calc(100% - 60px); height: 405px; 
+    max-width: calc(100% - 60px);
+    max-height: 580px;
+    background: #000; color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.formsButtonsWrapper {
+    height: 100px;
+}
+
+.formsButton {
+    float: right;
+    margin-top: 15px;
+    padding: 11px 25px;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+} 
+
+.formsLinkedinButton {
+    float: left;
+    margin-top: 8px;
+    width: 52px; height: 52px;
+    font-size: 4.1rem;
+    color: #000;  
+  }
+
+.formsStatusSuccess {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.formsStatusFail {
+    float: left;
+    margin-top: 15px;
+    margin-left: 4%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1366px)  {
+
+    .forms {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .formsInputEmail {
+        margin: 1% 0;
+        width: 100%;
+        height: 10%;
+    }
+
+    .formsInputText {
+        margin: 1% 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .formsButtonsWrapper {
+        height: 8%;
+        width: 100%;
+    }
+
+    .formsButton {
+        margin: 3% 0;
+        width: auto;
+        height: auto;
+        padding: 2%;
+        font-size: 3.3vh;
+    }
+
+    .formsLinkedinButton {
+        float: left;
+        margin: 0;
+        width: auto; height: auto;
+        font-size: 6.6vh;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1366px) { 
+    .forms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formsInputText {
+        width: 60%;
+    }
+    .formsInputEmail {
+        width: 60%;
+    }
+    .formsButtonsWrapper {
+        width: 70%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 830px) and (min-width: 800px) {
+    .formsInputEmail {
+        margin: 0 0 auto 0;
+    }
+    .formsInputText {
+        height: 80%;
+    }
+
+    .formsButtonsWrapper {
+        flex: 0 1 100%;
+    }
+
+    .formsButton {
+        margin: 0;
+    }
+ }

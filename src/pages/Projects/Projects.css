@@ -1,0 +1,367 @@
+.projects {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100vh; width: 100% ;
+
+  background-image: radial-gradient(#FFF 7%, transparent 7%), radial-gradient(#fff 7%, transparent 7%);
+  background-color: #000;
+  background-position: 0 0, 85px -90px;
+  background-size: 180px 180px;
+  animation-name: backgroundmovement;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.26,.2,.79,.87);
+
+  z-index: 0;
+}
+
+@keyframes backgroundmovement {
+  0% {
+background-position: 0px -0px, 85px -90px;
+     }
+ 100% {
+background-position: 900px -900px, 985px -990px;
+  }
+}
+
+.projectsWrapper {
+  position: absolute;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  overflow: hidden;
+}
+
+.projectsContainer {
+  width: 46%; height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsToHomeButton {
+  float: right;
+  width: 40px; height: 55px;
+  padding: 0px 0px;
+  margin: 15px 0px 15px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.projectsContent {
+  width: 80%; height: 85%;
+  align-self: center;
+  justify-content: center;
+
+  overflow: auto;
+}
+
+.projectsList {
+  width: 100%; height: 100%;
+
+  display: inline;
+  overflow-x: scroll;
+}
+
+.projectsListItem {
+  margin: 5%;
+  min-height: 0;
+  background-color: #fff;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+}
+
+.projectsListItemImg {
+  margin: 3%;
+  max-width: 240px;
+  max-height: 120px;
+}
+
+.projectsListArrowRight {
+  margin: auto 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.projectsListItemText {
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.projectsOnHover {
+  margin-left: 12%;
+  width: 42%; height: 100%;
+}
+
+.projectsOnHoverContainer {
+  position: absolute;
+  top: 9.5%; left: 62.1%;
+  width: 30.5%; height: 80%;
+  background: #fff;
+  border-radius: 15px;
+  border: 10px solid #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-items: center;
+
+  overflow: auto;
+  overflow-x: hidden;
+
+  transition: all 0.3s ease-in;
+}
+
+.projectsOnHoverContainer-enter {
+  left: 62.1%;
+}
+.projectsOnHoverContainer-enter-active {
+  left: 125%;
+}
+
+.projectsOnHoverContainer-exit {
+  left: 62.1%;
+}
+
+.projectsOnHoverContainer-exit-active {
+  left: 125%;
+}
+
+.projectsOnHoverButton {
+  position: absolute;
+  right: 1.5%; top: 0.5%;
+  width: 45px; height: 45px;
+  padding: 2px;
+  margin: 15px 0px 15px 25px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 15px;
+  font-size: 2.6rem;
+
+  transition: all 0.3 ease;
+}
+
+.projectsOnHoverImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.projectsOnHoverTitle {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.projectsOnHoverText {
+  margin: 2.3% 1% 2.3% 1%;
+  text-align: justify;
+  text-justify: distribute;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.projectsOnHoverBR {
+  display: block;
+  content: "";
+  margin-top: 2.8%;
+}
+
+.projectsOnHoverGitLink {
+  margin: auto auto 0 auto;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  height: 36px; width: 98%;
+
+  padding: 5px;
+  
+  color: #fff;
+  background: #000;
+  border-radius: 0 0 10px 10px;
+
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .projectsWrapper {
+    display: inline;
+  }
+
+  .projectsToHomeButton {
+    height: 5%;
+    font-size: 2rem; margin: 2% 5%;
+  }
+
+  .projectsOnHoverButton {
+    width: 35px; height: 35px;
+    padding: 0px;
+    font-size: 1.5rem;
+    border: 2px solid #000;
+  }
+
+  .projectsContainer {
+    width: 100%; height: 95%;
+  }
+
+  .projectsContent {
+    width: 100%;
+  }
+
+  .projectsListItem {
+    margin: 6% 2%;
+  }
+
+  .projectsListArrowRight {
+    font-size: 1.5rem;
+  }
+
+  .projectsListItemText {
+    font-size: 1.2rem;
+  }
+
+  .projectsListItemImg {
+    margin: 0 2% 0 5%;
+    height: 100%; width: 100%;
+    max-width: 175px; max-height: 87.5px;
+  }
+
+  .projectsOnHoverContainer {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    border: none;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+
+  .projectsOnHoverContainer-enter {
+    left: 0;
+  }
+  .projectsOnHoverContainer-enter-active {
+    left: 100%;
+  }
+  
+  .projectsOnHoverContainer-exit {
+    left: 0;
+  }
+  
+  .projectsOnHoverContainer-exit-active {
+    left: 100%;
+  }
+
+  .projectsOnHoverGitLink {
+    border-radius: 0;
+  }
+
+  .projectsOnHoverButton {
+    position: absolute;
+    top: 0; right: 5%;
+    z-index: 1000;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .projectsWrapper {
+    display: inline;
+  }
+  
+  .projectsToHomeButton {
+    font-size: 3rem; margin: 2% 5%;
+  }
+
+  .projectsContainer {
+    width: 100%;
+  }
+
+  .projectsContent {
+    width: 100%;
+  }
+
+  .projectsListArrowRight {
+    font-size: 4rem;
+  }
+
+
+  .projectsListItemText {
+    font-size: 3rem;
+  }
+
+  .projectsListItemImg {
+    margin: 0 2% 0 5%;
+    height: 100%; width: 100%;
+    max-width: 300px; max-height: 175px;
+  }
+
+  .projectsOnHoverContainer {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    border: none;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+
+  .projectsOnHoverContainer-enter {
+    left: 0%;
+  }
+  .projectsOnHoverContainer-enter-active {
+    left: 100%;
+  }
+  
+  .projectsOnHoverContainer-exit {
+    left: 0%;
+  }
+  
+  .projectsOnHoverContainer-exit-active {
+    left: 100%;
+  }
+
+  .projectsOnHoverGitLink {
+    border-radius: 0;
+  }
+
+  .projectsOnHoverButton {
+    position: absolute;
+    top: 0.5%; right: 3%;
+    width: 72px; height: 62px;
+    padding: 0px 3px;
+    font-size: 3.8rem;
+    border: 2px solid #000;
+    z-index: 1000;
+  }
+
+  .projectsOnHoverTitle {
+    font-size: 3rem;
+  }
+
+  .projectsOnHoverText {
+    font-size: 2.5rem;
+  }
+
+  .projectsOnHoverGitLink {
+    width: 100%; height: 10%;
+    padding: 1%;
+    margin: auto;
+    font-size: 3rem;
+
+
+  }
+}
